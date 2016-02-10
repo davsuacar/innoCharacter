@@ -7,4 +7,6 @@ scalaVersion := "2.10.4"
 libraryDependencies += "org.apache.spark" % "spark-streaming_2.10" % "1.6.0"
 libraryDependencies += "org.apache.spark" % "spark-streaming-twitter_2.10" % "1.6.0"
 libraryDependencies += "org.twitter4j" % "twitter4j-stream" % "3.0.3"
+libraryDependencies += "com.datastax.spark" % "spark-cassandra-connector_2.10" % "1.5.0-RC1"
+
     
