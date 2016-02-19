@@ -18,12 +18,7 @@ object AuthTwitter {
 
   def main(args: Array[String]) {
 
-    val CassandraConnectionIp = "172.17.0.10"
-
-    if (args.length < 2) {
-      System.err.println("Usage: AuthTwitter <hostname> <port>")
-      System.exit(1)
-    }
+    val CassandraConnectionIp = "cassandra"
 
     val conf = new SparkConf().setMaster("local[2]").setAppName("innoCharacter").set("spark.cassandra.connection.host", CassandraConnectionIp)
     val ssc = new StreamingContext(conf, Seconds(3))

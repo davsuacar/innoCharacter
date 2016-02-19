@@ -1,5 +1,0 @@
-
-# Cassandra
-cassandra:
-    image: cassandra:latest
-    hostname: cassandra

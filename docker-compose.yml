@@ -1,0 +1,13 @@
+
+# Cassandra
+cassandra:
+    image: cassandra:latest
+    hostname: cassandra
+
+innocharacter:
+    build: .
+    ports:
+        - "3000:3000"
+    links:
+        - cassandra
+
