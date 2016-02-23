@@ -18,5 +18,3 @@ ADD project /code/project
 RUN ["sbt", "assembly"]
 
 RUN wget http://d3kbcqa49mib13.cloudfront.net/spark-1.6.0-bin-hadoop2.6.tgz && tar xvf spark-1.6.0-bin-hadoop2.6.tgz
-
-RUN spark-1.6.0-bin-hadoop2.6/bin/spark-submit --class AuthTwitter.AuthTwitter --master local[2] target/scala-2.10/innoCharacter-assembly-1.0.jar
